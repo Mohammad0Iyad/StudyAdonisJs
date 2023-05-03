@@ -9,10 +9,10 @@ export default class User extends BaseModel {
   @column({ serializeAs: "username", })
   public username: string
 
-  @column()
+  @column({serializeAs:"email"})
   public email: string
 
-  @column({ serializeAs: null })
+  @column({ serializeAs: "password" })
   public password: string
 
   @column()

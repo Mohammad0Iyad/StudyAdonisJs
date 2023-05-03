@@ -33,6 +33,7 @@ Route.group(() => {
   }).prefix("/auth");
 
   Route.group(() => {
+    
     Route.get("/", "UsersController.getByAuth");
     Route.put("/", "UsersController.update");
     Route.delete("/:id", "UsersController.destroy");
